@@ -84,6 +84,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             ListaContactos.add(new Contact("Pablito", new Address(-79.854105, 0.897314)));
             ListaContactos.add(new Contact("Rosita", new Address(-79.851005, 0.874214)));
 
+            //Mi lista de contactos
+            ListaContactos.add(new Contact("Carlos", new Address(-80.729471, -0.944672)));
+            ListaContactos.add(new Contact("Neivis", new Address(-80.726674, -0.951248)));
+            ListaContactos.add(new Contact("Dayanna", new Address(-80.716599, -0.958070)));
+            ListaContactos.add(new Contact("Angie", new Address(-80.684495, -0.969219)));
+
+
             for (Contact contact : ListaContactos) {
                 LatLng position = new LatLng(contact.getAddress().getLatitude(), contact.getAddress().getLongitude());
                 mMap.addMarker(new MarkerOptions()
